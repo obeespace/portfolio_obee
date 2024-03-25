@@ -3,52 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Obee | Portfolio</title>
   </head>
   <body>
-    <h1>Hi! I'm Obinna Ugwu</h1>
-    <h4>Fullstack Developer</h4>
-    <p>
-      I am skilled in good design practices and a good knowledge of html which
-      is needed to bring your next project to live
-    </p>
+    <div class="mx-auto w-5/6 my-40 lg:flex">
+      <div class="">
+        <h4 class="px-3 bg-green-100 rounded-2xl w-fit">Fullstack Developer</h4>
+        <h1 class="text-green-800 text-4xl font-bold">Hi! I'm Obinna Ugwu</h1>
 
-    <button>Hire Me</button>
+        <p class="lg:w-4/6 mt-5 italic">
+          "I am skilled in good design practices and a good knowledge of html
+          which is needed to bring your next project to live"
+        </p>
+        <div class="flex gap-5">
+          <button
+            class="mt-10 border border-green-800 px-4 py-2 rounded-xl hover:bg-green-800 hover:text-white"
+          >
+            Hire Me
+          </button>
 
-    <br /><br />
-    <h2>Projects</h2>
-    <h4>Healthbar</h4>
-    <p>
-      A pharmaceutical web app that collects your symptoms and give an 80%
-      diagnosis based off the info fed into it
-    </p>
-    <label>Technology used:</label>
-    <ul>
-      <li>Concept generation</li>
-      <li>figma designing</li>
-      <li>html</li>
-    </ul>
+          <button class="mt-10 bg-green-800 px-4 py-2 rounded-xl text-white">
+            Download CV
+          </button>
+        </div>
+      </div>
+      <div class="mt-20 lg:mt-0">
+        <img src="1459.png" />
+      </div>
+    </div>
 
-    <h4>Obee | Portfolio</h4>
-    <p>
-      A beautiful portfolio page that shows the skills and track records of the
-      amazing web developer, Obinna
-    </p>
-    <label>Technology used:</label>
-    <ul>
-      <li>Concept generation</li>
-      <li>figma designing</li>
-      <li>html</li>
-    </ul>
+    <div class="text-center">
+      <h2 class="text-green-800 text-4xl font-bold">Projects</h2>
 
-    <br /><br />
-    <h2>Services</h2>
-    <h4>My skills an services are but not limited to:</h4>
+      <div class="lg:grid grid-cols-3 w-5/6 mx-auto mt-20 gap-5">
+        <div class="bg-green-100 rounded-2xl py-20 px-8 shadow-xl mb-10 lg:mb-0">
+          <h4 class="text-green-600 font-semibold text-xl mb-3">Healthbar</h4>
+          <p class="text-sm text-gray-700">
+            A pharmaceutical web app that collects your symptoms and give an 80%
+            diagnosis based off the info fed into it
+          </p>
+        </div>
+
+        <div class="bg-green-100 rounded-2xl py-20 px-8 shadow-xl mb-10 lg:mb-0">
+          <h4 class="text-green-600 font-semibold text-xl mb-3">
+            Obee | Portfolio
+          </h4>
+          <p class="text-sm text-gray-700">
+            A beautiful portfolio page that shows the skills and track records
+            of the amazing web developer, Obinna
+          </p>
+        </div>
+
+        <div class="bg-green-100 rounded-2xl py-20 px-8 shadow-xl mb-10 lg:mb-0">
+          <h4 class="text-green-600 font-semibold text-xl mb-3">Healthbar</h4>
+          <p class="text-sm text-gray-700">
+            A pharmaceutical web app that collects your symptoms and give an 80%
+            diagnosis based off the info fed into it
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center my-40 w-5/6 mx-auto">
+    <h2 class="text-green-800 text-4xl font-bold">Services</h2>
+    <h4 class="mt-20 font-semibold">My skills an services are but not limited to:</h4>
     <ul>
       <li>Design Thinking</li>
       <li>Figma generation and prototyping</li>
       <li>Coding with HTML</li>
     </ul>
+  </div>
 
     <br /><br />
     <h2>Testimonies</h2>
@@ -65,17 +90,27 @@
       the very best"
     </p>
 
-    <br><br>
+    <br /><br />
     <h2>Contact</h2>
     <h4>Let us collaborate on your next big idea, leave me a Message</h4>
     <form>
-        <input type="text" placeholder="Enter your name" name="name" required/><br><br>
-        <input type="email" placeholder="Enter your email address" name="email" required/><br><br>
-        <textarea cols="40" rows="20" required></textarea><br><br>
-        <button>Send Message</button>
+      <input
+        type="text"
+        placeholder="Enter your name"
+        name="name"
+        required
+      /><br /><br />
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        name="email"
+        required
+      /><br /><br />
+      <textarea cols="40" rows="20" required></textarea><br /><br />
+      <button>Send Message</button>
     </form>
 
-    <br><br>
+    <br /><br />
     <footer>Obee 2024</footer>
   </body>
 </html>
