@@ -3,13 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Outfit"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Outfit";
+        font-size: 22px;
+      }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Obee | Portfolio</title>
   </head>
   <body>
     <div class="mx-auto w-5/6 my-40 lg:flex">
       <div class="">
-        <h4 class="px-3 bg-green-100 rounded-2xl w-fit">Fullstack Developer</h4>
+        <h4 class="px-3 bg-green-100 rounded-2xl w-fit text-base mb-1">
+          Fullstack Developer
+        </h4>
         <h1 class="text-green-800 text-4xl font-bold">Hi! I'm Obinna Ugwu</h1>
 
         <p class="lg:w-4/6 mt-5 italic">
@@ -18,12 +30,12 @@
         </p>
         <div class="flex gap-5">
           <button
-            class="mt-10 border border-green-800 px-4 py-2 rounded-xl hover:bg-green-800 hover:text-white"
+            class="mt-10 border border-green-800 px-4 py-2 shadow-md rounded-xl hover:bg-green-800 hover:text-white"
           >
             Hire Me
           </button>
 
-          <button class="mt-10 bg-green-800 px-4 py-2 rounded-xl text-white">
+          <button class="mt-10 bg-green-800 px-4 py-2 shadow-md rounded-xl text-white">
             Download CV
           </button>
         </div>
@@ -37,27 +49,33 @@
       <h2 class="text-green-800 text-4xl font-bold">Projects</h2>
 
       <div class="lg:grid grid-cols-3 w-5/6 mx-auto mt-20 gap-5">
-        <div class="bg-green-100 rounded-2xl py-20 px-8 shadow-xl mb-10 lg:mb-0">
+        <div
+          class="bg-green-100 rounded-2xl py-20 px-8 shadow-xl mb-10 lg:mb-0"
+        >
           <h4 class="text-green-800 font-semibold text-xl mb-3">Healthbar</h4>
-          <p class="text-sm text-gray-700">
+          <p class="text-lg text-md text-gray-700">
             A pharmaceutical web app that collects your symptoms and give an 80%
             diagnosis based off the info fed into it
           </p>
         </div>
 
-        <div class="bg-green-100 rounded-2xl py-20 px-8 shadow-xl mb-10 lg:mb-0">
+        <div
+          class="bg-green-100 rounded-2xl py-20 px-8 shadow-xl mb-10 lg:mb-0"
+        >
           <h4 class="text-green-800 font-semibold text-xl mb-3">
             Obee | Portfolio
           </h4>
-          <p class="text-sm text-gray-700">
+          <p class="text-lg text-gray-700">
             A beautiful portfolio page that shows the skills and track records
-            of the amazing web developer, Obinna
+            of the amazing web developer, Obinna Ugwu
           </p>
         </div>
 
-        <div class="bg-green-100 rounded-2xl py-20 px-8 shadow-xl mb-10 lg:mb-0">
+        <div
+          class="bg-green-100 rounded-2xl py-20 px-8 shadow-xl mb-10 lg:mb-0"
+        >
           <h4 class="text-green-800 font-semibold text-xl mb-3">Healthbar</h4>
-          <p class="text-sm text-gray-700">
+          <p class="text-lg text-gray-700">
             A pharmaceutical web app that collects your symptoms and give an 80%
             diagnosis based off the info fed into it
           </p>
@@ -66,14 +84,31 @@
     </div>
 
     <div class="text-center my-40 w-5/6 mx-auto">
-    <h2 class="text-green-800 text-4xl font-bold">Services</h2>
-    <h4 class="mt-5 font-semibold">My skills an services are but not limited to:</h4>
-    <div class="lg:grid grid-cols-3 w-5/6 mx-auto mt-20 gap-5">
-      <div class="flex flex-col items-center gap-3"><img class="w-14" src="light-bulb.png"/><p>Design Thinking</p></div>
-      <div class="flex flex-col items-center gap-3"><img class="w-14" src="drawing.png"/><p>Figma generation and prototyping</p></div>
-      <div class="flex flex-col items-center gap-3"><img class="w-14" src="coding.png"/><p>Coding with HTML</p></div>
+      <h2 class="text-green-800 text-4xl font-bold">Services</h2>
+      <h4 class="mt-3 font-semibold">
+        My skills and services are but not limited to:
+      </h4>
+      <div class="lg:grid grid-cols-3 w-5/6 mx-auto mt-20 gap-5">
+        <div class="flex flex-col items-center gap-3 mb-20 lg:mb-0">
+          <div class="shadow-md shadow-green-800 px-4 py-4 rounded-full">
+            <img class="w-14" src="light-bulb.png" />
+          </div>
+          <p class="mt-5">Design Thinking</p>
+        </div>
+        <div class="flex flex-col items-center gap-3 mb-20 lg:mb-0">
+          <div class="shadow-md shadow-green-800 px-4 py-4 rounded-full">
+            <img class="w-14" src="drawing.png" />
+          </div>
+          <p class="mt-5">Figma generation and prototyping</p>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div class="shadow-md shadow-green-800 px-4 py-4 rounded-full">
+            <img class="w-14" src="coding.png" />
+          </div>
+          <p class="mt-5">Coding with HTML</p>
+        </div>
+      </div>
     </div>
-  </div>
 
     <br /><br />
     <h2>Testimonies</h2>
@@ -89,28 +124,39 @@
       out the services of Obee, I can boost in my UN meetings that it is one of
       the very best"
     </p>
+    <br/><br/>
 
     <br /><br />
-    <h2>Contact</h2>
-    <h4>Let us collaborate on your next big idea, leave me a Message</h4>
-    <form>
-      <input
-        type="text"
-        placeholder="Enter your name"
-        name="name"
-        required
-      /><br /><br />
-      <input
-        type="email"
-        placeholder="Enter your email address"
-        name="email"
-        required
-      /><br /><br />
-      <textarea cols="40" rows="20" required></textarea><br /><br />
-      <button>Send Message</button>
-    </form>
+    <div class="lg:w-4/6 w-5/6 mx-auto text-center my-40 mx-auto">
+      <h2 class="text-green-800 text-4xl font-bold">Contact</h2>
+      <h4 class="mt-3 font-semibold">
+        Let us collaborate on your next big idea, leave me a Message
+      </h4>
+      <div class="mt-20">
+        <input
+          class="border-b border-black px-3 py-1 w-full mb-5 rounded-md placeholder:text-gray-400 outline-none"
+          type="text"
+          placeholder="Enter your name"
+          name="name"
+          required
+        />
+        <input
+          class="border-b border-black px-3 py-1 w-full mb-5 lg:mb-0 rounded-md placeholder:text-gray-400 outline-none"
+          type="email"
+          placeholder="Enter your email address"
+          name="email"
+          required
+        /><br /><br />
+        <textarea
+          class="w-full px-3 py-1 border-b border-black mt-2 lg:mt-5 rounded-md placeholder:text-gray-400 outline-none"
+          cols="20"
+          rows="6"
+          required
+        ></textarea>
+        <button class="mt-10 border border-green-800 shadow-md shadow-green-800 px-4 py-2 rounded-xl hover:bg-green-800 hover:text-white">Send Message</button>
+      </div>
+    </div>
 
-    <br /><br />
-    <footer>Obee 2024</footer>
+    <footer class="w-5/6 mx-auto py-5 text-right">Obee 2024</footer>
   </body>
 </html>
