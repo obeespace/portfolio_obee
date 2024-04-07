@@ -124,7 +124,7 @@
           />
         </div>
         <div class="lg:px-24 px-5 lg:py-40 py-20">
-          <div id="elon" style="display: none;">
+          <div id="elon" style="display: none">
             <p class="italic">
               "I had my doubts but I silenced them and sorted out Obee to
               deliver my space x web app. I can tell you with all confidence
@@ -139,7 +139,7 @@
             </div>
           </div>
 
-          <div id="bola" class="ease-out duration-500" style="display: block;">
+          <div id="bola" class="ease-out duration-500" style="display: block">
             <p class="italic">
               "The CBN's webapp was a mess when I came into service but after
               sorting out the services of Obee, I can boost in my UN meetings
@@ -154,7 +154,9 @@
             </div>
           </div>
         </div>
-        <div><img id="next" class="w-24 animate-pulse " src="right-arrow.png" /></div>
+        <div>
+          <img id="next" class="w-24 animate-pulse" src="right-arrow.png" />
+        </div>
       </div>
     </div>
     <br /><br />
@@ -166,63 +168,81 @@
         Let us collaborate on your next big idea, leave me a Message
       </h4>
       <div class="mt-20">
-        <input
-          class="border-b border-black px-3 py-1 w-full mb-5 rounded-md placeholder:text-gray-400 outline-none"
-          type="text"
-          placeholder="Enter your name"
-          name="name"
-          required
-        />
-        <input
-          class="border-b border-black px-3 py-1 w-full mb-5 lg:mb-0 rounded-md placeholder:text-gray-400 outline-none"
-          type="email"
-          placeholder="Enter your email address"
-          name="email"
-          required
-        /><br /><br />
-        <textarea
-          class="w-full px-3 py-1 border-b border-black mt-2 lg:mt-5 rounded-md placeholder:text-gray-400 outline-none"
-          cols="20"
-          rows="6"
-          required
-        ></textarea>
-        <button
-          class="mt-10 border border-green-800 shadow-md shadow-green-800 px-4 py-2 rounded-xl hover:bg-green-800 hover:text-white"
-        >
-          Send Message
-        </button>
+        <form id="nameForm">
+          <input
+            class="border-b border-black px-3 py-1 w-full mb-5 rounded-md placeholder:text-gray-400 outline-none"
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            name="name"
+            required
+          />
+          <input
+            class="border-b border-black px-3 py-1 w-full mb-5 lg:mb-0 rounded-md placeholder:text-gray-400 outline-none"
+            type="email"
+            placeholder="Enter your email address"
+            name="email"
+            required
+          /><br /><br />
+          <textarea
+            class="w-full px-3 py-1 border-b border-black mt-2 lg:mt-5 rounded-md placeholder:text-gray-400 outline-none"
+            cols="20"
+            rows="6"
+            required
+          ></textarea>
+          <button
+          type="submit"
+            class="mt-10 border border-green-800 shadow-md shadow-green-800 px-4 py-2 rounded-xl hover:bg-green-800 hover:text-white"
+          >
+            Send Message
+          </button>
+        </form>
       </div>
     </div>
 
     <footer class="w-5/6 mx-auto py-5 text-right">Obee 2024</footer>
     <script>
-      
       document.getElementById("prev").onclick = function () {
         if (document.getElementById("elon").style.display === "none") {
           document.getElementById("elon").style.display = "block";
           document.getElementById("bola").style.display = "none";
-        } else if (
-          document.getElementById("elon").style.display === "block"
-        ) {
+        } else if (document.getElementById("elon").style.display === "block") {
           document.getElementById("elon").style.display = "none";
           document.getElementById("bola").style.display = "block";
         }
-
-        
       };
 
       document.getElementById("next").onclick = function () {
         if (document.getElementById("elon").style.display === "none") {
           document.getElementById("elon").style.display = "block";
           document.getElementById("bola").style.display = "none";
-        } else if (
-          document.getElementById("elon").style.display === "block"
-        ) {
+        } else if (document.getElementById("elon").style.display === "block") {
           document.getElementById("elon").style.display = "none";
           document.getElementById("bola").style.display = "block";
         }
-        
       };
+
+      var nameForm = document.getElementById("nameForm");
+      var name = document.getElementById("name");
+      nameForm.addEventListener("submit", function (event) {
+        // Prevent the form from submitting
+        event.preventDefault();
+
+        // Get the value entered in the name field
+        var name = name.value.trim();
+
+        // Define the regular expression pattern for validating the name
+        var nameRegex = /^[a-zA-Z\s']+$/;
+
+        // Test if the name matches the regex pattern
+        if (nameRegex.test(name)) {
+          // If valid, display a success message
+          alert("Name is valid: " + name);
+        } else {
+          // If invalid, display an error message
+          alert("Please enter a valid name.");
+        }
+      });
     </script>
   </body>
 </html>
