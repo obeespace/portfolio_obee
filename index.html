@@ -35,7 +35,9 @@
             Hire Me
           </button>
 
-          <button class="mt-10 bg-green-800 px-4 py-2 shadow-md rounded-xl text-white">
+          <button
+            class="mt-10 bg-green-800 px-4 py-2 shadow-md rounded-xl text-white"
+          >
             Download CV
           </button>
         </div>
@@ -111,20 +113,51 @@
     </div>
 
     <br /><br />
-    <h2>Testimonies</h2>
-    <h4>Elon Musk</h4>
-    <p>
-      "I had my doubts but I silenced them and sorted out Obee to deliver my
-      space x web app. I can tell you with all confidence that Obee is on of the
-      best in the game"
-    </p>
-    <h4>Bola Ahmed Tinubu</h4>
-    <p>
-      "The CBN's webapp was a mess when I came into service but after sorting
-      out the services of Obee, I can boost in my UN meetings that it is one of
-      the very best"
-    </p>
-    <br/><br/>
+    <div class="w-5/6 mx-auto">
+      <h2 class="text-center text-green-800 text-4xl font-bold">Testimonies</h2>
+      <div class="bg-green-100 rounded-2xl mt-20 flex items-center px-5">
+        <div>
+          <img
+            id="prev"
+            class="transform rotate-180 w-24 animate-pulse"
+            src="right-arrow.png"
+          />
+        </div>
+        <div class="lg:px-24 px-5 lg:py-40 py-20">
+          <div id="elon" style="display: none;">
+            <p class="italic">
+              "I had my doubts but I silenced them and sorted out Obee to
+              deliver my space x web app. I can tell you with all confidence
+              that Obee is on of the best in the game"
+            </p>
+            <div class="flex justify-end">
+              <h4
+                class="text-right mt-10 bg-white border border-green-800 w-fit px-3 py-2 rounded-2xl transform -rotate-3"
+              >
+                Elon Musk
+              </h4>
+            </div>
+          </div>
+
+          <div id="bola" class="ease-out duration-500" style="display: block;">
+            <p class="italic">
+              "The CBN's webapp was a mess when I came into service but after
+              sorting out the services of Obee, I can boost in my UN meetings
+              that it is one of the very best"
+            </p>
+            <div class="flex justify-end">
+              <h4
+                class="text-right mt-10 bg-white border border-green-800 w-fit px-3 py-2 rounded-2xl transform -rotate-3"
+              >
+                Bola Ahmed Tinubu
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div><img id="next" class="w-24 animate-pulse " src="right-arrow.png" /></div>
+      </div>
+    </div>
+    <br /><br />
 
     <br /><br />
     <div class="lg:w-4/6 w-5/6 mx-auto text-center my-40 mx-auto">
@@ -153,10 +186,43 @@
           rows="6"
           required
         ></textarea>
-        <button class="mt-10 border border-green-800 shadow-md shadow-green-800 px-4 py-2 rounded-xl hover:bg-green-800 hover:text-white">Send Message</button>
+        <button
+          class="mt-10 border border-green-800 shadow-md shadow-green-800 px-4 py-2 rounded-xl hover:bg-green-800 hover:text-white"
+        >
+          Send Message
+        </button>
       </div>
     </div>
 
     <footer class="w-5/6 mx-auto py-5 text-right">Obee 2024</footer>
+    <script>
+      
+      document.getElementById("prev").onclick = function () {
+        if (document.getElementById("elon").style.display === "none") {
+          document.getElementById("elon").style.display = "block";
+          document.getElementById("bola").style.display = "none";
+        } else if (
+          document.getElementById("elon").style.display === "block"
+        ) {
+          document.getElementById("elon").style.display = "none";
+          document.getElementById("bola").style.display = "block";
+        }
+
+        
+      };
+
+      document.getElementById("next").onclick = function () {
+        if (document.getElementById("elon").style.display === "none") {
+          document.getElementById("elon").style.display = "block";
+          document.getElementById("bola").style.display = "none";
+        } else if (
+          document.getElementById("elon").style.display === "block"
+        ) {
+          document.getElementById("elon").style.display = "none";
+          document.getElementById("bola").style.display = "block";
+        }
+        
+      };
+    </script>
   </body>
 </html>
